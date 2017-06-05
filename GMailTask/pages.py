@@ -76,6 +76,7 @@ class LettersListPage(Base):
         try:
             wait = WebDriverWait(self.driver, 20)
             wait.until(lambda driver: self.driver.find_element(*LettersListPageLocators.WAIT_LOADING_MASK))
+            # wait.until(lambda driver: not self.driver.find_element(*LettersListPageLocators.WAIT_LOADING_MASK))
             web_element = self.driver.find_element(*LettersListPageLocators.LAST_LETTER)
             web_element.click()
         except WebDriverException as e:

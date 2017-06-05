@@ -53,5 +53,5 @@ class CheckGMail(unittest.TestCase):
         self.driver.quit()
         # remove user from database
 
-if __name__ == "__main__":
-    unittest.main()
+# if __name__ == "__main__":
+#     unittest.main()
