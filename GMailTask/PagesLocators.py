@@ -1,7 +1,7 @@
 from selenium.webdriver.common.by import By
 
 class GoogleHomePageLocators:
-    REDIRECT_TO_MAIL_BUTTON = (By.XPATH, ".//*[@class='gb_5d gb_R gb_dg gb_5f']/div[2]/a")
+    REDIRECT_TO_MAIL_BUTTON = (By.XPATH, ".//div[@id='gb']//a[@href='https://mail.google.com/mail/?tab=wm']")
     ENTER_BUTTON = (By.XPATH, ".//*[@id='gb_70']")
 
 class AuthorizationPageLocators:
